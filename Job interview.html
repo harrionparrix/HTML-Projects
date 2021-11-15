@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB INTERVIEW</title>
+</head>
+<style>
+    .container{
+        background-color: white;
+        margin-left: 40px;
+
+    }
+
+    #submitapp{
+      text-align: center;
+    }
+        body {    
+        font-family: 'Anaheim';
+        font-size: 1.2em;
+        background-color: rgb(240, 217, 221);
+        margin-top: 40px;
+        }
+        #number {
+  width: 150px;
+}
+        fieldset { 
+  border:1px solid black;
+  margin: 10px;
+        }
+</style>
+<body>
+    
+        <div class="container"  text-align="center">
+        <h1><B>Application For Job Interview</B></h1>
+        <B>NOTE:</B>Form is to be completed at least 21 days prior to date
+    </div>
+    <fieldset class="container">
+        <legend><b>Personal Details</b></legend>
+        <div>
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+          <div>
+            <label for="address-label">Address:</label>
+            <input type="Address" id="address" name="Address" placeholder="Enter address here">   </div>
+          <div>
+            <label id="email-label" for="Email">Email:</label>
+            <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+          <div>
+            <label id="number-label" for="phone">Phone Number:</label>
+            <input type="number" maxlength="30"  id="number" name="user_name" placeholder="Enter 10 digit number" min="1" max="9">
+        </div>
+        <div>
+          <input type="radio" name="gender" value="male" checked> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other
+        </div>  
+        <div>
+          Date of proposed interview: <input type="date">
+        </div>
+      </fieldset>
+      <fieldset class="container">
+        <div>
+          <label for="Gender">Check All That Apply</label>
+          <p>
+            <input type="checkbox" name="cseskills" value="cseskills">Computer skills exceed college level <br>
+            <input type="checkbox" name="car" value="car"> I own a vehicle<br>
+            <input type="checkbox" name="work" value="work" checked> I work full-time<br>
+            <input type="checkbox" name="rich" value="rich" checked> My parents are rich<br>
+            <input type="checkbox" name="loc" value="loc" checked> Like working outdoors<br>
+          </p>
+
+        </div>
+      </fieldset>
+      <fieldset class="container">
+      <div>
+      <label for="politics">Political Persuasion:</label>
+      <select id="dropdown">
+      <option value="left">Left Wing</option>
+      <option value="right">Right Wing</option>
+      <option value="conservative">Conservative</option>
+      <option value="nazi">Nazi</option>
+      </select>
+    
+      <label for="politics">Education Level Completed:</label>
+      <select id="dropdown2">
+      <option value="University">University</option>
+      <option value="College">College</option>
+      <option value="Secondary">High School</option>  
+      <option value="None">None</option>
+      </select>
+        </div>
+      </fieldset>
+      <fieldset class="container">
+        <Legend><b>Essay Section</b></legend>
+        <div>
+          <p> In 50 words or more explain why you want this job</p>
+          <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea> 
+        </div>
+      <div>
+        <label for="msg">Please upload contact details for 2 references</label><br>
+        <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+      <p>Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:
+        <button>Attach Files</button></p>
+    </fieldset>
+    <div id="submitapp">
+      <button type="submit" id="submit">Send your application</button>
+    </div>
+    </div>
+</body>
+</html>
